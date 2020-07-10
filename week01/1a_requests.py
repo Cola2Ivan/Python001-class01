@@ -68,7 +68,7 @@ def get_url_name(myurl):
 
 #生成包含所有页面的元组
 #推导式写法
-urls= tuple(f'https://movie.douban.com/top250?start={ page *25 }&filter=' for page in range(10))
+urls= tuple(f'https://movie.douban.com/top250?start={ page *25 }&filter=' for page in range(3))
 
 print(urls)
 
@@ -79,4 +79,4 @@ sleep(20)
 
 for page in urls:
     get_url_name(page)
-    sleep(20)
+    sleep(5)
